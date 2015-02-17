@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>iZeNPaint</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id='option'>
+		<ul id="couleurs">
+			<li><a href="#" data-couleur="#000000" class="actif">GOMME</a></li>
+			<li><a href="#" data-couleur="#ffffff">Blanc</a></li>
+			<li><a href="#" data-couleur="#ff0000">Rouge</a></li>
+			<li><a href="#" data-couleur="brown">Marron</a></li>
+			<li><a href="#" data-couleur="orange">Orange</a></li>
+			<li><a href="#" data-couleur="yellow">Jaune</a></li>
+			<li><a href="#" data-couleur="green">Vert</a></li>
+			<li><a href="#" data-couleur="cyan">Cyan</a></li>
+			<li><a href="#" data-couleur="blue">Bleu</a></li>
+			<li><a href="#" data-couleur="indigo">Indigo</a></li>
+			<li><a href="#" data-couleur="Violet">Violet</a></li>
+			<li><a href="#" data-couleur="pink">Rose</a></li>
+		</ul>
+		<div id='button_clear'>
+			<button id="clearing" type="button" onclick="redraw()">
+			Effacer
+			</button>
+		</div>
+		<select id="selection" name="selection">
+			<option value="crayon">Crayon</option>
+			<option value="rectangle">Rectangle</option>
+			<option value="cercle">Cercle</option>
+			<option value="ligne">Ligne</option>
+		</select>
+		<form id="largeurs_pinceau">
+			<input id="largeur_pinceau" type="range" min="1" max="50" value="1" />
+			<label for="largeur_pinceau" class="text_pinceau">Largeur du pinceau</label>
+			<output id="output" class="text_taille_pinceau">1 pixels</output>
+		</form>
+	</div>
+	<canvas id="canvas1" width="1000" height="930">
+	</canvas>
+  <script src="js/jquery-1.11.0.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
